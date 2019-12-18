@@ -1,0 +1,21 @@
+{
+  "name": "pug-web-extension",
+  "description": "Browser extension for PUG.",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "icons": {
+    "48": "icons/logo_48.png",
+    "128": "icons/logo_128.png"
+  },
+  "browser_action": {
+    "default_title": "pug-web-extension",
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+  }
+}
